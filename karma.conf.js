@@ -1,7 +1,12 @@
 // Karma configuration
 // Generated on Sun Apr 10 2016 20:28:48 GMT-0400 (EDT)
 
+
 module.exports = function(config) {
+  var testPattern = 'test/browser/**/*.spec.js';
+  if(process.env.SPEC)
+    testPattern = 'test/browser/**/*' + process.env.SPEC + '.spec.js';
+
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -20,7 +25,7 @@ module.exports = function(config) {
       'node_modules/angular-mocks/angular-mocks.js',
       'browser/js/app.js',
       'browser/js/**/*.js',
-      'test/browser/**/*.js'
+      testPattern
     ],
 
 

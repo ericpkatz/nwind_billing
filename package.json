@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/karma start"
+    "test": "./node_modules/.bin/karma start",
+    "test:single": "SPEC=customer.factory ./node_modules/.bin/karma start"
   },
   "author": "",
   "license": "ISC",
