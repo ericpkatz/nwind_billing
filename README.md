@@ -7,4 +7,5 @@
 - customers.ctrl.spec
 - customer.ctrl.spec
 - in order to avoid massive failures comment out all tests when startin and uncomment one at a time
+- in order to run single tests you can do this SPEC=factory npm test
 
